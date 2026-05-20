@@ -1,0 +1,148 @@
+digraph knime {
+  rankdir=LR;
+  "9" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Decision Tree Learner
+9"];
+  "10" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Decision Tree Predictor
+10"];
+  "11" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Scorer
+11"];
+  "12" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Equal Size Sampling
+12"];
+  "14" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Equal Size Sampling
+14"];
+  "16" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Random Forest Learner
+16"];
+  "18" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Scorer
+18"];
+  "19" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Random Forest Predictor
+19"];
+  "21" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Equal Size Sampling
+21"];
+  "23" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="RProp MLP Learner
+23"];
+  "24" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Scorer
+24"];
+  "25" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="MultiLayerPerceptron Predictor
+25"];
+  "29" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Logistic Regression Learner
+29"];
+  "30" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Scorer
+30"];
+  "31" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Logistic Regression Predictor
+31"];
+  "33" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Equal Size Sampling
+33"];
+  "35" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Column Appender
+35"];
+  "36" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="ROC Curve
+36"];
+  "39" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="SVM Learner
+39"];
+  "40" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Scorer
+40"];
+  "41" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="SVM Predictor
+41"];
+  "43" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Equal Size Sampling
+43"];
+  "44" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Equal Size Sampling
+44"];
+  "45" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Gradient Boosted Trees Learner
+45"];
+  "46" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Scorer
+46"];
+  "49" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="Gradient Boosted Trees Predictor
+49"];
+  "60" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Partitioner
+60"];
+  "61" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Partitioner
+61"];
+  "62" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Aggregator
+62"];
+  "63" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Aggregator
+63"];
+  "64" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Aggregator
+64"];
+  "65" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Aggregator
+65"];
+  "66" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Aggregator
+66"];
+  "67" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Aggregator
+67"];
+  "68" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Partitioner
+68"];
+  "69" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Partitioner
+69"];
+  "70" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Partitioner
+70"];
+  "71" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="X_Partitioner
+71"];
+  "83" [shape=box, style="rounded,filled", fillcolor="yellow", label="CSV Writer
+83"];
+  "84" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="CSV Writer
+84"];
+  "85" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="CSV Writer
+85"];
+  "86" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="CSV Writer
+86"];
+  "87" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="CSV Writer
+87"];
+  "88" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="CSV Writer
+88"];
+  "90" [shape=box, style="rounded,filled", fillcolor="lightgreen", label="CSV Reader
+90"];
+  "9" -> "10" [taillabel="1", headlabel="1"];
+  "10" -> "66" [taillabel="1", headlabel="1"];
+  "11" -> "83" [taillabel="1", headlabel="1"];
+  "12" -> "9" [taillabel="1", headlabel="1"];
+  "14" -> "16" [taillabel="1", headlabel="1"];
+  "16" -> "19" [taillabel="3", headlabel="1"];
+  "18" -> "84" [taillabel="1", headlabel="1"];
+  "19" -> "63" [taillabel="1", headlabel="1"];
+  "21" -> "23" [taillabel="1", headlabel="1"];
+  "23" -> "25" [taillabel="1", headlabel="1"];
+  "24" -> "86" [taillabel="1", headlabel="1"];
+  "25" -> "64" [taillabel="1", headlabel="1"];
+  "29" -> "31" [taillabel="1", headlabel="1"];
+  "30" -> "87" [taillabel="1", headlabel="1"];
+  "31" -> "62" [taillabel="1", headlabel="1"];
+  "33" -> "29" [taillabel="1", headlabel="1"];
+  "35" -> "36" [taillabel="1", headlabel="1"];
+  "39" -> "41" [taillabel="1", headlabel="1"];
+  "40" -> "88" [taillabel="1", headlabel="1"];
+  "41" -> "67" [taillabel="1", headlabel="1"];
+  "43" -> "39" [taillabel="1", headlabel="1"];
+  "44" -> "45" [taillabel="1", headlabel="1"];
+  "45" -> "49" [taillabel="1", headlabel="1"];
+  "46" -> "85" [taillabel="1", headlabel="1"];
+  "49" -> "65" [taillabel="1", headlabel="1"];
+  "60" -> "31" [taillabel="2", headlabel="2"];
+  "60" -> "33" [taillabel="1", headlabel="1"];
+  "61" -> "10" [taillabel="2", headlabel="2"];
+  "61" -> "12" [taillabel="1", headlabel="1"];
+  "62" -> "30" [taillabel="1", headlabel="1"];
+  "62" -> "35" [taillabel="1", headlabel="5"];
+  "63" -> "18" [taillabel="1", headlabel="1"];
+  "63" -> "35" [taillabel="1", headlabel="3"];
+  "64" -> "24" [taillabel="1", headlabel="1"];
+  "64" -> "35" [taillabel="1", headlabel="4"];
+  "65" -> "35" [taillabel="1", headlabel="2"];
+  "65" -> "46" [taillabel="1", headlabel="1"];
+  "66" -> "11" [taillabel="1", headlabel="1"];
+  "66" -> "35" [taillabel="1", headlabel="1"];
+  "67" -> "35" [taillabel="1", headlabel="6"];
+  "67" -> "40" [taillabel="1", headlabel="1"];
+  "68" -> "14" [taillabel="1", headlabel="1"];
+  "68" -> "19" [taillabel="2", headlabel="2"];
+  "69" -> "44" [taillabel="1", headlabel="1"];
+  "69" -> "49" [taillabel="2", headlabel="2"];
+  "70" -> "41" [taillabel="2", headlabel="2"];
+  "70" -> "43" [taillabel="1", headlabel="1"];
+  "71" -> "21" [taillabel="1", headlabel="1"];
+  "71" -> "25" [taillabel="2", headlabel="2"];
+  "90" -> "60" [taillabel="1", headlabel="1"];
+  "90" -> "61" [taillabel="1", headlabel="1"];
+  "90" -> "68" [taillabel="1", headlabel="1"];
+  "90" -> "69" [taillabel="1", headlabel="1"];
+  "90" -> "70" [taillabel="1", headlabel="1"];
+  "90" -> "71" [taillabel="1", headlabel="1"];
+}

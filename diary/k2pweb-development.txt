@@ -1,0 +1,8 @@
+1. server logic, docker image
+2. pyproject, yml, CI, tests
+3. frontend logic
+4. frontend visial
+5. logs, monitoring
+6. deploy preparation
+7. security checks, SSL
+8. release to production

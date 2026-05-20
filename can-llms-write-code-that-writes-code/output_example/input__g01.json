@@ -1,0 +1,698 @@
+{
+  "workflow_id": "input__g01",
+  "workflow_path": "/work/input/workflow.knime",
+  "nodes": {
+    "9": {
+      "id": "9",
+      "name": "Decision Tree Learner",
+      "type": "org.knime.base.node.mine.decisiontree2.learner2.DecisionTreeLearnerNodeFactory3",
+      "path": "/work/input/Decision Tree Learner (#9)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "10": {
+      "id": "10",
+      "name": "Decision Tree Predictor",
+      "type": "org.knime.base.node.mine.decisiontree2.predictor2.DecTreePredictorNodeFactory",
+      "path": "/work/input/Decision Tree Predictor (#10)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "11": {
+      "id": "11",
+      "name": "Accuracy",
+      "type": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+      "path": "/work/input/Scorer (#11)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "12": {
+      "id": "12",
+      "name": "Equal Size Sampling",
+      "type": "org.knime.base.node.preproc.equalsizesampling.EqualSizeSamplingNodeFactory",
+      "path": "/work/input/Equal Size Sampling (#12)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "14": {
+      "id": "14",
+      "name": "Equal Size Sampling",
+      "type": "org.knime.base.node.preproc.equalsizesampling.EqualSizeSamplingNodeFactory",
+      "path": "/work/input/Equal Size Sampling (#14)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "16": {
+      "id": "16",
+      "name": "Random Forest Learner",
+      "type": "org.knime.base.node.mine.treeensemble2.node.randomforest.learner.classification.RandomForestClassificationLearnerNodeFactory2",
+      "path": "/work/input/Random Forest Learner (#16)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "18": {
+      "id": "18",
+      "name": "Accuracy",
+      "type": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+      "path": "/work/input/Scorer (#18)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "19": {
+      "id": "19",
+      "name": "Random Forest Predictor",
+      "type": "org.knime.base.node.mine.treeensemble2.node.randomforest.predictor.classification.RandomForestClassificationPredictorNodeFactory2",
+      "path": "/work/input/Random Forest Predictor (#19)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "21": {
+      "id": "21",
+      "name": "Equal Size Sampling",
+      "type": "org.knime.base.node.preproc.equalsizesampling.EqualSizeSamplingNodeFactory",
+      "path": "/work/input/Equal Size Sampling (#21)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "23": {
+      "id": "23",
+      "name": "RProp MLP Learner",
+      "type": "org.knime.base.node.mine.neural.rprop.RPropNodeFactory2",
+      "path": "/work/input/RProp MLP Learner (#23)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "24": {
+      "id": "24",
+      "name": "Accuracy",
+      "type": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+      "path": "/work/input/Scorer (#24)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "25": {
+      "id": "25",
+      "name": "MultiLayerPerceptron Predictor",
+      "type": "org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeFactory",
+      "path": "/work/input/MultiLayerPerceptron Predictor (#25)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "29": {
+      "id": "29",
+      "name": "Logistic Regression Learner",
+      "type": "org.knime.base.node.mine.regression.logistic.learner4.LogRegLearnerNodeFactory4",
+      "path": "/work/input/Logistic Regression Learner (#29)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "30": {
+      "id": "30",
+      "name": "Accuracy",
+      "type": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+      "path": "/work/input/Scorer (#30)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "31": {
+      "id": "31",
+      "name": "Logistic Regression Predictor",
+      "type": "org.knime.base.node.mine.regression.logistic.predictor.LogisticRegressionPredictorNodeFactory",
+      "path": "/work/input/Logistic Regression Predictor (#31)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "33": {
+      "id": "33",
+      "name": "Equal Size Sampling",
+      "type": "org.knime.base.node.preproc.equalsizesampling.EqualSizeSamplingNodeFactory",
+      "path": "/work/input/Equal Size Sampling (#33)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "35": {
+      "id": "35",
+      "name": "Column Appender",
+      "type": "org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeFactory",
+      "path": "/work/input/Column Appender (#35)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "36": {
+      "id": "36",
+      "name": "ROC Curve",
+      "type": "org.knime.base.views.node.roccurve.ROCCurveNodeFactory",
+      "path": "/work/input/ROC Curve (#36)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "39": {
+      "id": "39",
+      "name": "SVM Learner",
+      "type": "org.knime.base.node.mine.svm.learner.SVMLearnerNodeFactory2",
+      "path": "/work/input/SVM Learner (#39)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "40": {
+      "id": "40",
+      "name": "Accuracy",
+      "type": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+      "path": "/work/input/Scorer (#40)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "41": {
+      "id": "41",
+      "name": "SVM Predictor",
+      "type": "org.knime.base.node.mine.svm.predictor2.SVMPredictorNodeFactory",
+      "path": "/work/input/SVM Predictor (#41)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "43": {
+      "id": "43",
+      "name": "Equal Size Sampling",
+      "type": "org.knime.base.node.preproc.equalsizesampling.EqualSizeSamplingNodeFactory",
+      "path": "/work/input/Equal Size Sampling (#43)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "44": {
+      "id": "44",
+      "name": "Equal Size Sampling",
+      "type": "org.knime.base.node.preproc.equalsizesampling.EqualSizeSamplingNodeFactory",
+      "path": "/work/input/Equal Size Sampling (#44)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "45": {
+      "id": "45",
+      "name": "Gradient Boosted Trees Learner",
+      "type": "org.knime.base.node.mine.treeensemble2.node.gradientboosting.learner.classification.GradientBoostingClassificationLearnerNodeFactory2",
+      "path": "/work/input/Gradient Boosted Trees Learner (#45)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "46": {
+      "id": "46",
+      "name": "Accuracy",
+      "type": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+      "path": "/work/input/Scorer (#46)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "49": {
+      "id": "49",
+      "name": "Gradient Boosted Trees Predictor",
+      "type": "org.knime.base.node.mine.treeensemble2.node.gradientboosting.predictor.classification.GradientBoostingClassificationPredictorNodeFactory3",
+      "path": "/work/input/Gradient Boosted Trees Predictor (#49)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "60": {
+      "id": "60",
+      "name": "currentIteration",
+      "type": "org.knime.base.node.meta.xvalidation.XValidatePartitionerFactory",
+      "path": "/work/input/X_Partitioner (#60)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "61": {
+      "id": "61",
+      "name": "currentIteration",
+      "type": "org.knime.base.node.meta.xvalidation.XValidatePartitionerFactory",
+      "path": "/work/input/X_Partitioner (#61)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "62": {
+      "id": "62",
+      "name": "X-Aggregator",
+      "type": "org.knime.base.node.meta.xvalidation.AggregateOutputNodeFactory",
+      "path": "/work/input/X_Aggregator (#62)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "63": {
+      "id": "63",
+      "name": "X-Aggregator",
+      "type": "org.knime.base.node.meta.xvalidation.AggregateOutputNodeFactory",
+      "path": "/work/input/X_Aggregator (#63)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "64": {
+      "id": "64",
+      "name": "X-Aggregator",
+      "type": "org.knime.base.node.meta.xvalidation.AggregateOutputNodeFactory",
+      "path": "/work/input/X_Aggregator (#64)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "65": {
+      "id": "65",
+      "name": "X-Aggregator",
+      "type": "org.knime.base.node.meta.xvalidation.AggregateOutputNodeFactory",
+      "path": "/work/input/X_Aggregator (#65)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "66": {
+      "id": "66",
+      "name": "X-Aggregator",
+      "type": "org.knime.base.node.meta.xvalidation.AggregateOutputNodeFactory",
+      "path": "/work/input/X_Aggregator (#66)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "67": {
+      "id": "67",
+      "name": "X-Aggregator",
+      "type": "org.knime.base.node.meta.xvalidation.AggregateOutputNodeFactory",
+      "path": "/work/input/X_Aggregator (#67)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "68": {
+      "id": "68",
+      "name": "currentIteration",
+      "type": "org.knime.base.node.meta.xvalidation.XValidatePartitionerFactory",
+      "path": "/work/input/X_Partitioner (#68)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "69": {
+      "id": "69",
+      "name": "currentIteration",
+      "type": "org.knime.base.node.meta.xvalidation.XValidatePartitionerFactory",
+      "path": "/work/input/X_Partitioner (#69)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "70": {
+      "id": "70",
+      "name": "currentIteration",
+      "type": "org.knime.base.node.meta.xvalidation.XValidatePartitionerFactory",
+      "path": "/work/input/X_Partitioner (#70)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "71": {
+      "id": "71",
+      "name": "currentIteration",
+      "type": "org.knime.base.node.meta.xvalidation.XValidatePartitionerFactory",
+      "path": "/work/input/X_Partitioner (#71)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "83": {
+      "id": "83",
+      "name": "CSV Writer",
+      "type": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+      "path": "/work/input/CSV Writer (#83)",
+      "state": "CONFIGURED",
+      "comments": null
+    },
+    "84": {
+      "id": "84",
+      "name": "CSV Writer",
+      "type": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+      "path": "/work/input/CSV Writer (#84)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "85": {
+      "id": "85",
+      "name": "CSV Writer",
+      "type": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+      "path": "/work/input/CSV Writer (#85)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "86": {
+      "id": "86",
+      "name": "CSV Writer",
+      "type": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+      "path": "/work/input/CSV Writer (#86)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "87": {
+      "id": "87",
+      "name": "CSV Writer",
+      "type": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+      "path": "/work/input/CSV Writer (#87)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "88": {
+      "id": "88",
+      "name": "CSV Writer",
+      "type": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory",
+      "path": "/work/input/CSV Writer (#88)",
+      "state": "EXECUTED",
+      "comments": null
+    },
+    "90": {
+      "id": "90",
+      "name": "Address",
+      "type": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
+      "path": "/work/input/CSV Reader (#90)",
+      "state": "EXECUTED",
+      "comments": null
+    }
+  },
+  "edges": [
+    {
+      "source": "9",
+      "target": "10",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "10",
+      "target": "66",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "11",
+      "target": "83",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "12",
+      "target": "9",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "14",
+      "target": "16",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "16",
+      "target": "19",
+      "source_port": "3",
+      "target_port": "1"
+    },
+    {
+      "source": "18",
+      "target": "84",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "19",
+      "target": "63",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "21",
+      "target": "23",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "23",
+      "target": "25",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "24",
+      "target": "86",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "25",
+      "target": "64",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "29",
+      "target": "31",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "30",
+      "target": "87",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "31",
+      "target": "62",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "33",
+      "target": "29",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "35",
+      "target": "36",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "39",
+      "target": "41",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "40",
+      "target": "88",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "41",
+      "target": "67",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "43",
+      "target": "39",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "44",
+      "target": "45",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "45",
+      "target": "49",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "46",
+      "target": "85",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "49",
+      "target": "65",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "60",
+      "target": "31",
+      "source_port": "2",
+      "target_port": "2"
+    },
+    {
+      "source": "60",
+      "target": "33",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "61",
+      "target": "10",
+      "source_port": "2",
+      "target_port": "2"
+    },
+    {
+      "source": "61",
+      "target": "12",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "62",
+      "target": "30",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "62",
+      "target": "35",
+      "source_port": "1",
+      "target_port": "5"
+    },
+    {
+      "source": "63",
+      "target": "18",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "63",
+      "target": "35",
+      "source_port": "1",
+      "target_port": "3"
+    },
+    {
+      "source": "64",
+      "target": "24",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "64",
+      "target": "35",
+      "source_port": "1",
+      "target_port": "4"
+    },
+    {
+      "source": "65",
+      "target": "35",
+      "source_port": "1",
+      "target_port": "2"
+    },
+    {
+      "source": "65",
+      "target": "46",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "66",
+      "target": "11",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "66",
+      "target": "35",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "67",
+      "target": "35",
+      "source_port": "1",
+      "target_port": "6"
+    },
+    {
+      "source": "67",
+      "target": "40",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "68",
+      "target": "14",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "68",
+      "target": "19",
+      "source_port": "2",
+      "target_port": "2"
+    },
+    {
+      "source": "69",
+      "target": "44",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "69",
+      "target": "49",
+      "source_port": "2",
+      "target_port": "2"
+    },
+    {
+      "source": "70",
+      "target": "41",
+      "source_port": "2",
+      "target_port": "2"
+    },
+    {
+      "source": "70",
+      "target": "43",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "71",
+      "target": "21",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "71",
+      "target": "25",
+      "source_port": "2",
+      "target_port": "2"
+    },
+    {
+      "source": "90",
+      "target": "60",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "90",
+      "target": "61",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "90",
+      "target": "68",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "90",
+      "target": "69",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "90",
+      "target": "70",
+      "source_port": "1",
+      "target_port": "1"
+    },
+    {
+      "source": "90",
+      "target": "71",
+      "source_port": "1",
+      "target_port": "1"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "workflow": "/work/input/workflow.knime",
+  "total_components": 1,
+  "components": [
+    {
+      "workflow_id": "input__g01",
+      "json": "/work/out/input__g01.json",
+      "dot": "/work/out/input__g01.dot",
+      "workbook_py": "/work/out/input__g01_workbook.py",
+      "workbook_ipynb": "/work/out/input__g01_workbook.ipynb",
+      "nodes": 45,
+      "edges": 55,
+      "idle": 0,
+      "not_implemented_count": 0,
+      "not_implemented_names": []
+    }
+  ]
+}
