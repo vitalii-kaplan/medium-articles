@@ -1,0 +1,57 @@
+Reseach proposal is like humble speech for investors
+
+Yes. That is actually a very accurate description.
+
+A research proposal is basically:
+
+> a humble, cautious, evidence-oriented pitch for intellectual investment.
+
+You ask for:
+
+* supervision,
+* funding,
+* institutional resources,
+* reputation risk,
+* several years of attention.
+
+But unlike startup culture, academia strongly punishes:
+
+* hype,
+* certainty,
+* grand promises,
+* “world-changing” rhetoric without evidence.
+
+So the expected tone is:
+
+> “This appears to be an interesting and feasible problem. Here is why it matters, how I plan to investigate it, what limitations exist, and what contribution may result.”
+
+The funny thing is:
+
+* investors often want confidence inflation,
+* academics often want confidence deflation.
+
+A startup founder says:
+
+> “This will disrupt the market.”
+
+A good researcher says:
+
+> “Preliminary results suggest that the proposed approach may improve reproducibility under certain conditions.”
+
+Same human activity. Different culture.
+
+Actually many strong research proposals sound like:
+
+* technically grounded,
+* pessimistically realistic,
+* methodologically careful startup pitches.
+
+And reviewers are subconsciously checking:
+
+* competence,
+* scope control,
+* realism,
+* persistence,
+* ability to finish.
+
+Exactly like investors.

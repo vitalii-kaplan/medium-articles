@@ -1,0 +1,134 @@
+Yes. Structurally, very similar.
+
+A one-page research proposal is basically:
+
+> an investment pitch for research.
+
+But instead of:
+
+* money,
+* market,
+* revenue,
+
+you pitch:
+
+* scientific value,
+* feasibility,
+* publication potential,
+* supervision fit.
+
+The professor is evaluating:
+
+| Startup pitch         | Research proposal            |
+| --------------------- | ---------------------------- |
+| Is there a market?    | Is there a research problem? |
+| Is it feasible?       | Is methodology realistic?    |
+| Why now?              | Why important now?           |
+| Why this founder?     | Why this researcher?         |
+| Competitive advantage | Novelty / contribution       |
+| Roadmap               | Methodology                  |
+| ROI                   | Publications / impact        |
+
+Actually academia and startups are structurally closer than many people think.
+
+---
+
+# Especially for PhD proposals
+
+The professor subconsciously asks:
+
+1. Can this person survive 3–5 years of research?
+2. Is this topic publishable?
+3. Is this technically feasible?
+4. Can I supervise this?
+5. Will this produce papers/grants/reputation?
+
+Very similar to:
+
+> “Can this startup survive and produce value?”
+
+---
+
+# Important difference
+
+In startup pitches:
+
+* optimism is rewarded.
+
+In research proposals:
+
+* overclaiming is punished.
+
+Academic culture prefers:
+
+* limited claims,
+* precise scope,
+* explicit limitations,
+* careful methodology.
+
+This is why:
+
+> “I will revolutionize AI with a new paradigm”
+
+sounds terrible academically.
+
+But:
+
+> “This work investigates reproducible translation of workflow-based analytics pipelines into executable Python representations”
+
+sounds much stronger.
+
+---
+
+# Your advantage
+
+You already think partly like a founder:
+
+* product,
+* architecture,
+* users,
+* infrastructure,
+* data collection,
+* deployment.
+
+Many PhD students cannot think operationally at all.
+
+Your risk is the opposite:
+
+> sounding too product-oriented and not research-oriented.
+
+So for academia, always translate:
+
+* feature → research question
+* implementation → methodology
+* users → empirical dataset
+* system limitation → scientific problem
+* benchmark → evaluation protocol
+
+---
+
+# Example with knime2py
+
+Startup language:
+
+> “We convert KNIME workflows into Python.”
+
+Research language:
+
+> “This work studies reproducible translation of visual data-analysis workflows into executable code representations.”
+
+Same core idea. Different framing.
+
+---
+
+# Another important insight
+
+A good research proposal is NOT:
+
+> “Here is my idea.”
+
+It is:
+
+> “Here is a problem that can generate publishable knowledge.”
+
+That is the key transition from engineering to research.
