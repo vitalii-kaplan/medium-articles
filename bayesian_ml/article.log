@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.10)  14 JUN 2026 20:31
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.10)  14 JUN 2026 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,11 +632,12 @@ File: f_11.png Graphic file (type bmp)
 <f_11.png>
 File: f_12.png Graphic file (type bmp)
 <f_12.png>
-File: table_2.png Graphic file (type bmp)
-<table_2.png>
 
 
 [4]
+File: table_2.png Graphic file (type bmp)
+<table_2.png>
+
 
 [5] (./article.aux)
  ***********
@@ -647,12 +648,12 @@ Package rerunfilecheck Info: File `article.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14216 strings out of 473840
- 275516 string characters out of 5729724
- 747473 words of memory out of 5000000
- 37092 multiletter control sequences out of 15000+600000
- 562839 words of font info for 78 fonts, out of 8000000 for 9000
+ 14224 strings out of 473840
+ 275694 string characters out of 5729724
+ 747461 words of memory out of 5000000
+ 37100 multiletter control sequences out of 15000+600000
+ 563979 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,5n,93p,1004b,419s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,5n,93p,1004b,417s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on article.pdf (5 pages).

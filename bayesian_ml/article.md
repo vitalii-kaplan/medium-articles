@@ -1,4 +1,6 @@
-# Bayes' Theorem Is Already Inside the Confusion Matrix
+# Bayes’ Theorem for Classification Metrics
+
+Given prevalence, recall, and the predicted-positive rate, you can calculate precision.
 
 ## A Model That Finds Half of the Buyers
 
@@ -10,7 +12,7 @@ A colleague gives you one result:
 
 Should you use the model?
 
-The number sounds disappointing. The model misses half of the buyers. But it is not enough to decide whether the model is useful. If its positive predictions reduce a list of 10,000 leads to 1,000 strong candidates, it may be extremely valuable. If it marks 9,000 leads as positive, it has saved the sales team almost no work.
+The number sounds disappointing. The model misses half of the buyers. But it is not enough to decide whether the model is useful. With 10,000 leads, a 10% buyer rate, and 50% recall, the model identifies 500 buyers. If it includes those buyers in a list of 1,000 positive predictions, it may be extremely valuable. If it marks 9,000 leads as positive, it has saved the sales team almost no work.
 
 We know how common buyers are, and we know how often the model finds them. We still do not know how often a positive prediction is correct.
 
@@ -38,7 +40,7 @@ The sales team needs the reverse probability:
 
 This is precision: among all leads predicted to be buyers, what fraction actually buy?
 
-Recall and precision look at the same successful predictions, but divide them by different groups. Bayes' theorem connects them.
+Recall and precision use the same true positives as their numerator, but divide them by different groups. Bayes' theorem connects them.
 
 ## Two Models With the Same Recall
 
@@ -105,7 +107,7 @@ Precision compares the same overlap with all positive predictions:
 
 ![Precision formula](f_8.png)
 
-Now divide recall by precision:
+Assuming `TP > 0`, divide recall by precision:
 
 ![Recall divided by precision](f_9.png)
 
@@ -121,11 +123,11 @@ Written as conditional probabilities, this is Bayes' theorem:
 
 ![Bayes theorem for buyers and positive predictions](f_12.png)
 
-Nothing new had to be added to the confusion matrix. Bayes' theorem was already present in the definitions of recall, precision, prevalence, and the predicted-positive rate.
+Nothing new had to be added to the confusion matrix. Bayes' theorem was already present in the definitions of recall, precision, prevalence, and the predicted-positive rate. As usual, precision and the final rearrangement require the model to make at least one positive prediction.
 
 ## The Model Is Additional Knowledge
 
-The similarity between the two articles is not a coincidence. Bayes' theorem is not specifically about mushrooms, medical tests, or machine learning. It describes how evidence changes the probability of a hypothesis.
+The similarity between the two articles is not a coincidence. Bayes' theorem is not specifically about mushrooms, medical tests, or machine learning. It describes how evidence updates the probability of a hypothesis.
 
 In the forest, the hypothesis was that a mushroom was poisonous, and the evidence was a red cap. In sales, the hypothesis is that a lead will buy, and the evidence is a positive prediction from a trained model.
 
@@ -143,7 +145,7 @@ High precision does not automatically make a model useful, and low precision doe
 
 The classification threshold also changes recall and precision together. Raising the threshold usually produces fewer positive predictions and higher precision, but it may miss more buyers. Lowering it usually finds more buyers while sending more weak leads to the sales team.
 
-Bayes' theorem explains how the metrics are related. It does not choose the business trade-off. That decision requires the costs of false positives, false negatives, and sales effort.
+Bayes' theorem explains how the metrics are related. It does not choose the business trade-off. That decision depends on the costs of false positives, false negatives, and sales effort.
 
 ## How to Read a Model Result
 
