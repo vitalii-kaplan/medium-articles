@@ -1,0 +1,88 @@
+\documentclass[border=4pt,multi={formula}]{standalone}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\newenvironment{formula}{\begin{minipage}{11in}\centering\Large}{\end{minipage}}
+\newcommand{\code}[1]{\mathrm{#1}}
+
+\begin{document}
+
+\begin{formula}
+\[
+P(\text{Red}\mid\text{Poisonous}) \ne P(\text{Poisonous}\mid\text{Red})
+\]
+\end{formula}
+
+\begin{formula}
+\[
+P(\text{Positive}\mid\text{Buyer}) = 0.5
+\]
+\end{formula}
+
+\begin{formula}
+\[
+P(\text{Buyer}\mid\text{Positive})
+\]
+\end{formula}
+
+\begin{formula}
+\[
+\code{ALL} = \code{TP} + \code{FP} + \code{FN} + \code{TN}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+\text{Prevalence} = \frac{\code{TP} + \code{FN}}{\code{ALL}}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+\text{Recall} = \frac{\code{TP}}{\code{TP} + \code{FN}}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+P(\text{Positive}) = \frac{\code{TP} + \code{FP}}{\code{ALL}}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+\text{Precision} = \frac{\code{TP}}{\code{TP} + \code{FP}}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+\frac{\text{Recall}}{\text{Precision}}
+= \frac{\code{TP}/(\code{TP}+\code{FN})}{\code{TP}/(\code{TP}+\code{FP})}
+= \frac{\code{TP}+\code{FP}}{\code{TP}+\code{FN}}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+\frac{\text{Recall}}{\text{Precision}}
+= \frac{(\code{TP}+\code{FP})/\code{ALL}}{(\code{TP}+\code{FN})/\code{ALL}}
+= \frac{P(\text{Positive})}{\text{Prevalence}}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+\text{Precision} = \frac{\text{Recall}\cdot\text{Prevalence}}{P(\text{Positive})}
+\]
+\end{formula}
+
+\begin{formula}
+\[
+P(\text{Buyer}\mid\text{Positive}) =
+\frac{P(\text{Positive}\mid\text{Buyer})\cdot P(\text{Buyer})}{P(\text{Positive})}
+\]
+\end{formula}
+
+\end{document}

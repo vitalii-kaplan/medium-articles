@@ -1,0 +1,37 @@
+\documentclass[11pt,border=0pt,multi={tableimage}]{standalone}
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\setmainfont{Times New Roman}
+\newcommand{\code}[1]{\texttt{#1}}
+\newenvironment{tableimage}{\begin{minipage}{6.5in}\centering}{\end{minipage}}
+
+\begin{document}
+
+\begin{tableimage}
+\begin{tabular}{lll}
+\toprule
+ & Actual buyer & Actual non-buyer \\
+\midrule
+Predicted buyer & True positive (\code{TP}) & False positive (\code{FP}) \\
+Predicted non-buyer & False negative (\code{FN}) & True negative (\code{TN}) \\
+\bottomrule
+\end{tabular}
+\end{tableimage}
+
+\begin{tableimage}
+\begin{tabularx}{\linewidth}{lXl}
+\toprule
+Bayesian term & Probability & ML metric \\
+\midrule
+Prior & $P(\text{Buyer})$ & Prevalence \\
+Likelihood & $P(\text{Positive}\mid\text{Buyer})$ & Recall \\
+Evidence & $P(\text{Positive})$ & Predicted-positive rate \\
+Posterior & $P(\text{Buyer}\mid\text{Positive})$ & Precision \\
+\bottomrule
+\end{tabularx}
+\end{tableimage}
+
+\end{document}
