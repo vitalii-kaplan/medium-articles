@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="white"/>
+  <style>
+    text { font-family: "Times New Roman", Times, serif; fill: #111; }
+    .title { font-size: 38px; }
+    .label { font-size: 30px; }
+    .small { font-size: 25px; }
+    .boundary { fill: none; stroke: #0b43a6; stroke-width: 5; }
+    .guide { fill: none; stroke: #0b43a6; stroke-width: 3; }
+  </style>
+
+  <defs>
+    <pattern id="tn-users" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="7" r="4" fill="#a8adb5"/>
+      <path d="M5 20 C5 13 19 13 19 20 Z" fill="#a8adb5"/>
+    </pattern>
+    <pattern id="tp-users" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="7" r="4" fill="#1456c4"/>
+      <path d="M5 20 C5 13 19 13 19 20 Z" fill="#1456c4"/>
+    </pattern>
+    <pattern id="fn-users" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="7" r="4" fill="#78aaf2"/>
+      <path d="M5 20 C5 13 19 13 19 20 Z" fill="#78aaf2"/>
+    </pattern>
+    <pattern id="fp-users" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="7" r="4" fill="#ee9326"/>
+      <path d="M5 20 C5 13 19 13 19 20 Z" fill="#ee9326"/>
+    </pattern>
+  </defs>
+
+  <text x="800" y="55" text-anchor="middle" class="title">1,000 users arranged as a 40 × 25 grid</text>
+  <text x="800" y="100" text-anchor="middle" class="label">Prevalence = 20% · Recall = 75% · Predicted-positive rate = 30% · Precision = 50%</text>
+
+  <!-- Forty columns by twenty-five rows. Each symbol is one user. -->
+  <rect x="320" y="220" width="960" height="600" fill="url(#tn-users)"/>
+
+  <!-- Five buyer rows: 200 users. -->
+  <!-- TP: 30 columns × 5 rows = 150. -->
+  <rect x="320" y="220" width="720" height="120" fill="url(#tp-users)"/>
+  <!-- FN: 10 columns × 5 rows = 50. -->
+  <rect x="1040" y="220" width="240" height="120" fill="url(#fn-users)"/>
+  <!-- FP: 30 columns × 5 rows below the buyer band = 150. -->
+  <rect x="320" y="340" width="720" height="120" fill="url(#fp-users)"/>
+
+  <!-- Outer population, buyer band, and predicted-positive rectangle. -->
+  <rect x="320" y="220" width="960" height="600" class="boundary"/>
+  <rect x="320" y="220" width="960" height="120" class="boundary"/>
+  <rect x="320" y="220" width="720" height="240" class="boundary"/>
+  <line x1="1040" y1="220" x2="1040" y2="340" class="guide"/>
+  <line x1="320" y1="340" x2="1040" y2="340" class="guide"/>
+
+  <!-- Region labels -->
+  <rect x="565" y="250" width="230" height="56" rx="8" fill="white" fill-opacity="0.9"/>
+  <text x="680" y="289" text-anchor="middle" class="label">TP = 150</text>
+
+  <rect x="1080" y="250" width="160" height="56" rx="8" fill="white" fill-opacity="0.9"/>
+  <text x="1160" y="289" text-anchor="middle" class="label">FN = 50</text>
+
+  <rect x="565" y="370" width="230" height="56" rx="8" fill="white" fill-opacity="0.9"/>
+  <text x="680" y="409" text-anchor="middle" class="label">FP = 150</text>
+
+  <rect x="745" y="620" width="230" height="56" rx="8" fill="white" fill-opacity="0.9"/>
+  <text x="860" y="659" text-anchor="middle" class="label">TN = 650</text>
+
+  <!-- Brackets and explanations -->
+  <path d="M290 220 h-18 M272 220 V340 M272 340 h18" class="boundary"/>
+  <text x="20" y="262" class="small">Actual buyers = 200</text>
+  <text x="20" y="302" class="small">top 5 rows</text>
+  <text x="20" y="338" class="small">prevalence = 20%</text>
+
+  <path d="M320 185 v-18 M320 167 H1040 M1040 185 v-18" class="boundary"/>
+  <text x="680" y="150" text-anchor="middle" class="label">30 of 40 columns: recall = 75%</text>
+
+  <path d="M1310 220 h18 M1328 220 V460 M1328 460 h-18" class="boundary"/>
+  <text x="1350" y="295" class="small">Predicted positive</text>
+  <text x="1350" y="331" class="small">= 300 users</text>
+  <text x="1350" y="367" class="small">30 × 10 rectangle</text>
+  <text x="1350" y="403" class="small">PPR = 30%</text>
+
+  <!-- Legend -->
+  <text x="320" y="875" class="label">Each symbol represents one user.</text>
+  <circle cx="330" cy="925" r="9" fill="#1456c4"/><text x="350" y="934" class="small">True positive</text>
+  <circle cx="570" cy="925" r="9" fill="#78aaf2"/><text x="590" y="934" class="small">False negative</text>
+  <circle cx="820" cy="925" r="9" fill="#ee9326"/><text x="840" y="934" class="small">False positive</text>
+  <circle cx="1065" cy="925" r="9" fill="#a8adb5"/><text x="1085" y="934" class="small">True negative</text>
+</svg>

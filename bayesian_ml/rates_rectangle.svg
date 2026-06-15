@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="white"/>
+  <style>
+    text { font-family: "Times New Roman", Times, serif; fill: #111; }
+    .label { font-size: 34px; }
+    .small { font-size: 29px; }
+    .metric { font-size: 30px; }
+    .line { fill: none; stroke: #0b43a6; stroke-width: 4; }
+    .thin { fill: none; stroke: #0b43a6; stroke-width: 3; }
+  </style>
+
+  <!-- Metric annotations -->
+  <text x="800" y="55" text-anchor="middle" class="metric">Predicted-positive rate = (TP + FP) / ALL = 10%</text>
+  <path class="line" d="M300 82 v18 M300 82 H1300 M1300 82 v18"/>
+
+  <text x="800" y="145" text-anchor="middle" class="metric">Precision = TP / (TP + FP) = 50%</text>
+  <path class="thin" d="M610 170 v18 M610 170 H990 M990 170 v18"/>
+
+  <!-- Exact mosaic: ALL=1000; width=1000, height=600. -->
+  <!-- Buyer column width 100 = 10%; non-buyer width 900 = 90%. -->
+  <!-- TP=50 and FN=50 each occupy 100x300. -->
+  <!-- FP=50 occupies 900x33.333; TN=850 occupies the remainder. -->
+  <rect x="300" y="230" width="100" height="300" fill="#2667d8" stroke="#0b43a6" stroke-width="4"/>
+  <rect x="300" y="530" width="100" height="300" fill="#bcd7ff" stroke="#0b43a6" stroke-width="4"/>
+  <rect x="400" y="230" width="900" height="33.333" fill="#f4a340" stroke="#0b43a6" stroke-width="4"/>
+  <rect x="400" y="263.333" width="900" height="566.667" fill="#eeeeee" stroke="#0b43a6" stroke-width="4"/>
+
+  <!-- Region labels -->
+  <text x="350" y="390" text-anchor="middle" class="small" fill="white">TP</text>
+  <text x="350" y="425" text-anchor="middle" class="small" fill="white">50</text>
+  <text x="350" y="675" text-anchor="middle" class="small">FN</text>
+  <text x="350" y="710" text-anchor="middle" class="small">50</text>
+  <text x="850" y="252" text-anchor="middle" font-size="25px">FP = 50</text>
+  <text x="850" y="555" text-anchor="middle" font-size="44px">TN = 850</text>
+
+  <!-- Recall and prevalence brackets -->
+  <path class="line" d="M270 230 h-18 M252 230 V830 M252 830 h18"/>
+  <text x="32" y="485" class="metric">Prevalence =</text>
+  <text x="32" y="525" class="metric">100 / 1,000 = 10%</text>
+
+  <path class="thin" d="M420 230 h18 M438 230 V530 M438 530 h-18"/>
+  <path class="thin" d="M438 380 H575"/>
+  <text x="590" y="370" class="metric">Recall = TP / (TP + FN)</text>
+  <text x="590" y="410" class="metric">= 50 / 100 = 50%</text>
+
+  <!-- Group and total brackets -->
+  <path class="line" d="M300 855 v18 M300 873 H400 M400 855 v18"/>
+  <text x="350" y="915" text-anchor="middle" class="small">Actual Buyers = 100</text>
+
+  <path class="line" d="M400 855 v18 M400 873 H1300 M1300 855 v18"/>
+  <text x="850" y="915" text-anchor="middle" class="small">Actual Non-buyers = 900</text>
+
+  <path class="line" d="M300 940 v18 M300 958 H1300 M1300 940 v18"/>
+  <text x="800" y="995" text-anchor="middle" class="label">ALL = 1,000 leads</text>
+
+  <!-- Precision callouts identify its numerator and denominator areas. -->
+  <path class="thin" d="M610 188 C540 205 465 230 385 290"/>
+  <path class="thin" d="M990 188 C1030 200 1040 215 1040 230"/>
+</svg>

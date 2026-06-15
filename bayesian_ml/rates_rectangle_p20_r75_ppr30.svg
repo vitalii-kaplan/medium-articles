@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="white"/>
+  <style>
+    text { font-family: "Times New Roman", Times, serif; fill: #111; }
+    .label { font-size: 34px; }
+    .small { font-size: 29px; }
+    .metric { font-size: 30px; }
+    .line { fill: none; stroke: #0b43a6; stroke-width: 4; }
+    .thin { fill: none; stroke: #0b43a6; stroke-width: 3; }
+  </style>
+
+  <text x="800" y="55" text-anchor="middle" class="metric">Predicted-positive rate = (TP + FP) / ALL = 30%</text>
+  <path class="line" d="M300 82 v18 M300 82 H1300 M1300 82 v18"/>
+
+  <text x="800" y="145" text-anchor="middle" class="metric">Precision = TP / (TP + FP) = 50%</text>
+  <path class="thin" d="M610 170 v18 M610 170 H990 M990 170 v18"/>
+
+  <!-- Exact mosaic for ALL=1000: TP=150, FN=50, FP=150, TN=650. -->
+  <!-- Buyer width=200 (20%), non-buyer width=800 (80%). -->
+  <!-- Within buyers: TP is 75% of height, FN is 25%. -->
+  <!-- Within non-buyers: FP is 150/800 of height, TN is 650/800. -->
+  <rect x="300" y="230" width="200" height="450" fill="#2667d8" stroke="#0b43a6" stroke-width="4"/>
+  <rect x="300" y="680" width="200" height="150" fill="#bcd7ff" stroke="#0b43a6" stroke-width="4"/>
+  <rect x="500" y="230" width="800" height="112.5" fill="#f4a340" stroke="#0b43a6" stroke-width="4"/>
+  <rect x="500" y="342.5" width="800" height="487.5" fill="#eeeeee" stroke="#0b43a6" stroke-width="4"/>
+
+  <text x="400" y="440" text-anchor="middle" class="label" fill="white">TP = 150</text>
+  <text x="400" y="765" text-anchor="middle" class="label">FN = 50</text>
+  <text x="900" y="298" text-anchor="middle" class="label">FP = 150</text>
+  <text x="900" y="600" text-anchor="middle" font-size="44px">TN = 650</text>
+
+  <path class="line" d="M270 230 h-18 M252 230 V830 M252 830 h18"/>
+  <text x="32" y="485" class="metric">Prevalence =</text>
+  <text x="32" y="525" class="metric">200 / 1,000 = 20%</text>
+
+  <path class="thin" d="M520 230 h18 M538 230 V680 M538 680 h-18"/>
+  <path class="thin" d="M538 455 H650"/>
+  <text x="665" y="445" class="metric">Recall = TP / (TP + FN)</text>
+  <text x="665" y="485" class="metric">= 150 / 200 = 75%</text>
+
+  <path class="line" d="M300 855 v18 M300 873 H500 M500 855 v18"/>
+  <text x="400" y="915" text-anchor="middle" class="small">Actual Buyers = 200</text>
+
+  <path class="line" d="M500 855 v18 M500 873 H1300 M1300 855 v18"/>
+  <text x="900" y="915" text-anchor="middle" class="small">Actual Non-buyers = 800</text>
+
+  <path class="line" d="M300 940 v18 M300 958 H1300 M1300 940 v18"/>
+  <text x="800" y="995" text-anchor="middle" class="label">ALL = 1,000 leads</text>
+
+  <path class="thin" d="M610 188 C560 205 500 230 470 300"/>
+  <path class="thin" d="M990 188 C1040 205 1050 225 1050 230"/>
+</svg>
